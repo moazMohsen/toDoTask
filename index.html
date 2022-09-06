@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page icon -->
+    <link rel="shortcut icon" href="./img/my logo-05.webp" google Icon />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!--=============== fontawsem===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo-nav">M<span class="txt">oaz</span></div>
+        <div class="btn-nav">
+          <div class="btn-nav-box" id="add-task">
+            <div class="icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="txt"><div class="nav-link">add task</div></div>
+          </div>
+          <div class="btn-nav-box" id="add-rotine">
+            <div class="icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="txt"><div class="nav-link">add routine</div></div>
+          </div>
+        </div>
+        <ul class="list-nav">
+          <li id="category-btn" class="x">
+            <div class="icon nav-link-icon x">
+              <i class="fa-solid fa-bars nav-link-icon x"></i>
+            </div>
+            <div class="txt"><div class="nav-link x">category</div></div>
+            <ul id="category-nav" class="category-nav x"></ul>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fa-solid fa-list"></i>
+            </div>
+            <div class="txt">
+              <div class="nav-link" id="AllTask">all tasks</div>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="txt">
+              <div class="nav-link" id="completedTask">completed tasks</div>
+            </div>
+          </li>
+        </ul>
+        <div class="togle-nav">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <section>
+        <div class="rotine">
+          <h1>day rotine</h1>
+          <div class="rotine-root"><h2>no rotine yet</h2></div>
+        </div>
+        <div class="task">
+          <h1>tasks</h1>
+          <div class="tasks-root">
+            <h2>no task yet</h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="circles">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <script src="../js/script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+ "name": "To Do list",
+ "version": "1.0.0",
+ "description": "first version of to do list",
+ "manifest_version": 3,
+ "author": "moaz",
+ "action": {
+  "default_popup": "index.html",
+  "default_title": "to do list"
+ },
+ "options_page": "index.html",
+ "content_scripts": [
+  {
+   "matches": [
+    "https://www.google.com/*"
+   ],
+   "css": [
+    "./css/style.css"
+   ],
+   "javaScript": [
+    "app.js"
+   ]
+  }
+ ],
+ "host_permissions": [
+  "https://www.google.com/*"
+ ]
+}
